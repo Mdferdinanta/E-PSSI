@@ -1,1 +1,537 @@
+/* home page */
+body {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    background: #211951;
+}
 
+.home-page .navbar {
+    background-color: #279EFF;
+    overflow: hidden;
+    padding: 10px;
+    margin: 20px 35px 0 35px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.home-page .navbar-logo img {
+    float: left;
+    width: 30px;
+    height: 38px;
+    align-items: center;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.home-page .navbar-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    font-family: poppins;
+    letter-spacing: 0.6px;
+    float: left;
+    margin-left: 11.5px;
+    margin-top: 4.5px;
+}
+
+.home-page .search-box {
+    display: inline-block;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.home-page .search-box input[type="text"] {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.home-page .search-box input[type="text"]::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.home-page .search-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #000000;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.home-page .search-button i {
+    color: #000000;
+}
+
+.home-page .search-button:hover {
+    color: #000000;
+}
+
+.home-page .profile {
+    float: right;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    margin-top: 1.6px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.home-page .profile img {
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    margin-top: 2.3px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.home-page .profile-name {
+    font-size: 17px;
+    color: #000000;
+    margin-top: 2.3px;
+    margin-right: 4px;
+}
+
+.home-page .profile-menu {
+    position: absolute;
+    top: 50px;
+    right: 65px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 6px;
+    display: none;
+    z-index: 1;
+}
+
+.home-page .profile-menu a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 6px;
+    text-align: left;
+}
+
+.home-page .profile-menu a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.home-page .show-menu {
+    display: block !important;
+}
+
+.home-page .frame {
+    position: relative;
+    height: 640px;
+    display: flex;
+}
+
+.home-page .menu-container {
+    margin: 20px 0 0 35px;
+    padding: 0px;
+    background-color: #279EFF;
+    border-radius: 7px;
+    width: 203px;
+    height: 320px;
+    float: left;
+}
+
+.home-page .menu-list {
+    list-style-type: none;
+    padding: 15px 10px 10px 0px;
+    margin: 0;
+}
+
+.home-page .menu-list li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.home-page .menu-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    padding: 10px;
+    border-radius: 7px;
+    width: 100%;
+    justify-content: center;
+}
+
+.home-page .menu-list img {
+    margin-right: 7px;
+    width: 25px;
+    height: 25px;
+}
+
+.home-page .menu-list li:nth-child(1) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 12px 12px 0px 22px;
+}
+
+.home-page .menu-list li:nth-child(2) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 0px 22px;
+}
+
+.home-page .menu-list li:nth-child(3) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 0px 22px;
+}
+
+.home-page .menu-list li:nth-child(4) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 0px 22px;
+}
+
+.home-page .menu-list li:nth-child(5) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 12px 22px;
+}
+
+.home-page .menu-list li a.active {
+    background-color: #000000;
+    color: #fff;
+}
+
+.home-page .menu-list li a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.home-page .talent-container {
+    height: 566px;
+    background-color: #279EFF;
+    position: relative;
+    border-radius: 7px;
+    padding: 26px 0px 15px 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 383.5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.home-page .talent-container h2 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 0px;
+    letter-spacing: 0.6px;
+    margin-bottom: 32px;
+    margin-left: 5px;
+    margin-top: 16px;
+    width: 100%;
+    display: block;
+    clear: both;
+    color: #000000;
+    text-align: center;
+}
+
+.home-page .talent-card {
+    background-color: #F7F7F8;
+    height: 155px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    margin-right: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.home-page .talent-card:last-child {
+    border-bottom: none;
+}
+
+.home-page .talent-card img {
+    width: 115px;
+    height: 150px;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-top: 24.5px;
+}
+
+.home-page .talent-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page .talent-info p {
+    margin: 7px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 0.6px;
+}
+
+.home-page .age-role {
+    display: flex;
+}
+
+.home-page .age-role p:first-child {
+    margin-right: 80px;
+}
+
+.home-page .age-role p:last-child {
+    margin-left: 0px;
+}
+
+.home-page .age-role p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 0.6px;
+}
+
+.home-page .talent-card:nth-child(1) {
+    background-color: #CEE6F9;
+}
+
+.home-page .talent-card:nth-child(2) {
+    background-color: #F7F7F8;
+}
+
+.home-page .talent-card:nth-child(3) {
+    background-color: #CEE6F9;
+}
+
+.home-page .talent-card:nth-child(4) {
+    background-color: #F7F7F8;
+}
+
+.home-page .talent-onwatch {
+    height: 566px;
+    background-color: #279EFF;
+    position: relative;
+    border-radius: 7px;
+    padding: 26px 15px 15px 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 383px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page .talent-onwatch h2 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 0px;
+    letter-spacing: 0.6px;
+    margin-bottom: 35px;
+    margin-left: 5px;
+    margin-top: 16px;
+    width: 100%;
+    display: block;
+    clear: both;
+    color: #000000;
+    text-align: center;
+}
+
+.home-page .player-card {
+    background-color: #F7F7F8;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 270px;
+}
+
+.home-page .player-header {
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.home-page .player-rating p {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+}
+
+.home-page .player-stats {
+    text-align: left;
+}
+
+.home-page .player-card img {
+    width: 190px;
+    height: 240px;
+    margin-left: 11px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.home-page .player-info h2 {
+    margin: 17px 0 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.home-page .player-info .age {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 1.5px solid #B9B9BA;
+    padding-bottom: 13px;
+}
+
+.home-page .detailed-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+}
+
+.home-page .stat {
+    text-align: center;
+}
+
+.home-page .stat p {
+    margin: 3px 0px 6px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.home-page .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.home-page .icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10.5px;
+    border-radius: 0px;
+    /* object-position: center;
+    object-fit: cover;   */
+}
+
+.home-page .icons .flag {
+    width: 40px;
+    height: 30px;
+}
+
+.home-page .icons .liga {
+    width: 25px;
+    height: 37px;
+}
+
+.home-page .icons .club {
+    width: 30px;
+    height: 30px;
+}
+
+.home-page .messages-container {
+    height: 566px;
+    background-color: #279EFF;
+    position: relative;
+    border-radius: 7px;
+    padding: 26px 0px 15px 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 35px;
+    width: 406px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page .messages-container h2 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 0px;
+    letter-spacing: 0.6px;
+    margin-bottom: 35px;
+    margin-left: 5px;
+    margin-top: 16px;
+    width: 100%;
+    display: block;
+    clear: both;
+    color: #000000;
+    text-align: center;
+}
+
+.home-page .message {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2.5px solid #279EFF;
+    position: relative;
+    background-color: #2576CB;
+    width: 100%;
+}
+
+.home-page .avatar img {
+    width: 40px;
+    height: 40px;
+    background-color: #F0F3FF;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-left: 30px;
+    margin-right: 13px;
+}
+
+.home-page .content {
+    flex: 1;
+}
+
+.home-page .name {
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: 2.8px;
+}
+
+.home-page .text {
+    color: #000000;
+}
+
+.home-page .time {
+    font-size: 15px;
+    color: #000000;
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: top;
+    margin-right: 22.5px;
+    margin-top: -22px;
+}
+
+.home-page .badge {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: absolute;
+    right: 31.5px;
+    top: 55%;
+}
