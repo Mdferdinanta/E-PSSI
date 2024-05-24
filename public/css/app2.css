@@ -1241,3 +1241,357 @@ body {
     right: 32px;
     top: 55%;
 }
+
+
+
+/* Talent Page */
+.talent-page .navbar {
+    background-color: #279EFF;
+    overflow: hidden;
+    padding: 10px;
+    margin: 20px 35px 0 35px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.talent-page .navbar-logo img {
+    float: left;
+    width: 30px;
+    height: 40x;
+    align-items: center;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.talent-page .navbar-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    font-family: poppins;
+    letter-spacing: 0.6px;
+    float: left;
+    margin-left: 11.5px;
+    margin-top: 4.5px;
+}
+
+.talent-page .search-box {
+    display: inline-block;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.talent-page .search-box input[type="text"] {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.talent-page .search-box input[type="text"]::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.talent-page .search-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #000000;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.talent-page .search-button i {
+    color: #000000;
+}
+
+.talent-page .search-button:hover {
+    color: #000000;
+}
+
+.talent-page .profile {
+    float: right;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    margin-top: 1.6px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.talent-page .profile img {
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    margin-top: 2.3px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.talent-page .profile-name {
+    font-size: 17px;
+    color: #000000;
+    margin-top: 2.3px;
+    margin-right: 4px;
+}
+
+.talent-page .profile-menu {
+    position: absolute;
+    top: 50px;
+    right: 65px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 6px;
+    display: none;
+    z-index: 1;
+}
+
+.talent-page .profile-menu a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 6px;
+    text-align: left;
+}
+
+.talent-page .profile-menu a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.talent-page .show-menu {
+    display: block !important;
+}
+
+.talent-page .frame {
+    position: relative;
+    height: 640px;
+    display: flex;
+}
+
+.talent-page .menu-container {
+    margin: 20px 0 0 35px;
+    padding: 0px;
+    background-color: #279EFF;
+    border-radius: 7px;
+    width: 203px;
+    height: 457px;
+    float: left;
+}
+
+.talent-page .menu-list {
+    list-style-type: none;
+    padding: 15px 10px 10px 0px;
+    margin: 0;
+}
+
+.talent-page .menu-list li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.talent-page .menu-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    padding: 10px;
+    border-radius: 7px;
+    width: 100%;
+    justify-content: center;
+}
+
+.talent-page .menu-list img {
+    margin-right: 7px;
+    width: 25px;
+    height: 25px;
+}
+
+.talent-page .menu-list li:nth-child(1) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 12px 12px 0px 22px;
+}
+
+.talent-page .menu-list li:nth-child(2) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 0px 22px;
+}
+
+.talent-page .menu-list li:nth-child(3) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 0px 22px;
+}
+
+.talent-page .menu-list li:nth-child(4) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 0px 22px;
+}
+
+.talent-page .menu-list li:nth-child(5) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 12px 22px;
+}
+
+.talent-page .menu-list li:nth-child(6) a {
+    width: 95px;
+    background-color: #2576CB;
+    margin: 15px 12px 0px 22px;
+}
+
+.talent-page .menu-list li:nth-child(7) a {
+    width: 95px;
+    background-color: #2576CB;
+    margin: 0px 12px 0px 22px;
+}
+
+.talent-page .menu-list li a.active {
+    background-color: #000000;
+    color: #fff;
+}
+
+.talent-page .menu-list li a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.talent-page .talent-container {
+    background-color: #279EFF;
+    position: relative;
+    border-radius: 7px;
+    padding: 26px 45px 15px 45px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1135px;
+}
+
+.talent-page .talent-container .active {
+    background-color: #7B7B7B;
+}
+
+.talent-page .talent-container :hover {
+    background-color: #989898;
+}
+
+.talent-page .talent-container h2 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 0px;
+    letter-spacing: 0.6px;
+    margin-bottom: 45px;
+    margin-left: 5px;
+    margin-top: 26px;
+    width: 100%;
+    display: block;
+    clear: both;
+    color: #000000;
+    text-align: center;
+}
+
+.talent-page .player-card {
+    background-color: #F7F7F8;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    width: 190px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 33px;
+    margin-left: 10px;
+}
+
+.talent-page .player-stats p {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.talent-page .player-card img {
+    width: 175px;
+    height: 115px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+.talent-page .player-info h2 {
+    margin: 15px 0 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.talent-page .player-info .rating {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 1px solid #B9B9BA;
+    padding-bottom: 5.5px;
+    margin-top: 14px;
+}
+
+.talent-page .detailed-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -9.5px;
+}
+
+.talent-page .stat {
+    text-align: center;
+}
+
+.talent-page .stat p {
+    margin: 3px 0px 6px 0px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.talent-page .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+
+.talent-page .icons img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10.5px;
+    border-radius: 0px;
+}
+
+.talent-page .icons .flag {
+    width: 30px;
+    height: 20px;
+}
+
+.talent-page .icons .liga {
+    width: 20px;
+    height: 32px;
+}
+
+.talent-page .icons .club {
+    width: 25px;
+    height: 25px;
+}
