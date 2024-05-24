@@ -237,6 +237,7 @@
     </body>
     </html>
 
+
 // <x-layout>
 //     <x-slot:title>{{ $title }}</x-slot:title>
 //     <div class="columns ..."> <!-- 3 kolom card -->
