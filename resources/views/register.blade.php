@@ -209,6 +209,7 @@
 
             confirmYes.addEventListener("click", function() {
                 confirmationPopup.style.display = "none";
+                alert("Data save successfully.");
                 document.querySelector('form').reset(); // Clear the form
             });
 
