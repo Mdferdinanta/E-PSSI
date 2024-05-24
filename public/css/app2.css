@@ -535,3 +535,309 @@ body {
     right: 31.5px;
     top: 55%;
 }
+
+
+
+/* Registration Form Page */
+.registration-page .navbar {
+    background-color: #279EFF;
+    overflow: hidden;
+    padding: 10px;
+    margin: 20px 35px 0 35px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.registration-page .navbar-logo img {
+    float: left;
+    width: 30px;
+    height: 38px;
+    align-items: center;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.registration-page .navbar-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    font-family: poppins;
+    letter-spacing: 0.6px;
+    float: left;
+    margin-left: 11.5px;
+    margin-top: 4.5px;
+}
+
+.registration-page .profile {
+    float: right;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    margin-top: 1.6px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.registration-page .profile img {
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    margin-top: 2.3px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.registration-page .profile-name {
+    font-size: 17px;
+    color: #000000;
+    margin-top: 2.3px;
+    margin-right: 4px;
+}
+
+.registration-page .profile-menu {
+    position: absolute;
+    top: 50px;
+    right: 65px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 6px;
+    display: none;
+    z-index: 1;
+}
+
+.registration-page .profile-menu a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 6px;
+    text-align: left;
+}
+
+.registration-page .profile-menu a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.registration-page .show-menu {
+    display: block !important;
+}
+
+.registration-page .frame {
+    position: relative;
+    height: 640px;
+    display: flex;
+}
+
+.registration-page .menu-container {
+    margin: 20px 0 0 35px;
+    padding: 0px;
+    background-color: #279EFF;
+    border-radius: 7px;
+    width: 203px;
+    height: 320px;
+    float: left;
+}
+
+.registration-page .menu-list {
+    list-style-type: none;
+    padding: 15px 10px 10px 0px;
+    margin: 0;
+}
+
+.registration-page .menu-list li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.registration-page .menu-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    padding: 10px;
+    border-radius: 7px;
+    width: 100%;
+    justify-content: center;
+}
+
+.registration-page .menu-list img {
+    margin-right: 7px;
+    width: 25px;
+    height: 25px;
+}
+
+.registration-page .menu-list li:nth-child(1) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 12px 12px 0px 22px;
+}
+
+.registration-page .menu-list li:nth-child(2) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 0px 22px;
+}
+
+.registration-page .menu-list li:nth-child(3) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 0px 22px;
+}
+
+.registration-page .menu-list li:nth-child(4) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 0px 22px;
+}
+
+.registration-page .menu-list li:nth-child(5) a {
+    width: 125px;
+    background-color: #2576CB;
+    margin: 0px 12px 12px 22px;
+}
+
+.registration-page .menu-list li a.active {
+    background-color: #000000;
+    color: #fff;
+}
+
+.registration-page .menu-list li a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.registration-page form {
+    height: 550px;
+    background-color: #279EFF;
+    position: relative;
+    border-radius: 7px;
+    padding: 10px 60px 60px 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 35px;
+    width: 1122px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.registration-page form h2 {
+    font-size: 29px;
+    font-weight: bold;
+    line-height: 8px;
+    text-align: center;
+    margin-bottom: 31px;
+    color: #000000;
+}
+
+.registration-page form *,
+.registration-page select {
+    color: #000000;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+}
+
+.registration-page form input,
+.registration-page form select {
+    height: 32px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    appearance: none;
+}
+
+.registration-page form label {
+    margin-bottom: 3px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+.registration-page .registration-form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12.7px;
+}
+
+.registration-page select {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"%3E%3Cpath fill="black" d="M7 10l5 5 5-5z" /%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    color: #000000;
+}
+
+.registration-page ::placeholder {
+    color: #676767;
+}
+
+.registration-page button {
+    height: 37px;
+    width: 110px;
+    background-color: #087200;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 4px;
+    float: right;
+}
+
+.registration-page button[name="save"] img {
+    width: 19px;
+    height: 19px;
+    margin-right: 10.5px;
+    border-radius: 0px;
+    float: right;
+    vertical-align: middle;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    width: 30%;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.popup-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #279EFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content .yes-button {
+    background-color: #28a745;
+}
+.popup-content .no-button {
+    background-color: #de1f32;
+}
