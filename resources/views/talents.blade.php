@@ -41,8 +41,29 @@
                 <li><a href="/onwatch" onclick="activateMenuItem(this)"><img src="{{ asset('img/onwatch.png') }}" alt="onwatch">On Watch</a></li>
                 <li><a href="/chat" onclick="activateMenuItem(this)"><img src="{{ asset('img/chat.png') }}" alt="chat">Chat</a></li>
 
-                <li><a href="" onclick="activateMenuItem(this)">Filter</a></li>
-                <li><a href="" onclick="activateMenuItem(this)">Sort By</a></li>
+                <div class="filter-menu" id="filterMenu"><a>Sort by</a>
+                    <div class="filter-option">
+                        <input type="checkbox" id="ratingFilter" name="rating">
+                        <label for="ratingFilter">Rating</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="ageFilter" name="age">
+                        <label for="ageFilter">Age</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="positionFilter" name="position">
+                        <label for="positionFilter">Position</label>
+                    </div>
+                    {{-- <div class="filter-option">
+                        <input type="checkbox" id="locationFilter" name="location">
+                        <label for="locationFilter">Location</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="statusFilter" name="status">
+                        <label for="statusFilter">Status</label>
+                    </div> --}}
+                    <button class="apply-button" onclick="applyFilters()">Apply</button>
+                </div>
             </ul>
         </div>
         
