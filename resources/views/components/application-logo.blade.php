@@ -1,0 +1,2 @@
+<img src="{{ asset('img/logo_p.svg') }}" alt="Logo" {!! $attributes->merge(['class' => 'dark:hidden']) !!}>
+<img src="{{ asset('img/logo_wp.svg') }}" alt="Logo" {!! $attributes->merge(['class' => 'hidden dark:block']) !!}>

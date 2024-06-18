@@ -3,9 +3,15 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\Coach;
+use App\Models\Scout;
+use App\Models\Message;
+use App\Models\Onwatch;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -18,9 +24,9 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'role',
         'email',
         'password',
-        'role'
     ];
 
     /**
@@ -44,5 +50,30 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function coach(): HasOne
+    {
+        return $this->hasOne(Coach::class);
+    }
+
+    public function scout(): HasOne
+    {
+        return $this->hasOne(Scout::class);
+    }
+    
+    public function onwatch(): HasMany
+    {
+        return $this->hasMany(Onwatch::class);
+    }
+
+    public function messagesSent(): HasMany
+    {
+        return $this->hasMany(Message::class, 'from_user_id');
+    }
+
+    public function messagesReceived(): HasMany
+    {
+        return $this->hasMany(Message::class, 'to_user_id');
     }
 }
