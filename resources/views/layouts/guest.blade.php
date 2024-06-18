@@ -32,10 +32,10 @@
     <div class="flex flex-col items-center min-h-screen pt-6 bg-gray-100 sm:justify-center sm:pt-0 dark:bg-gray-900">
         <div class="relative">
             <a href="/" wire:navigate>
-                <x-application-logo class="w-20 h-20 text-gray-500 fill-current" />
+                <x-application-logo class="h-20 text-gray-500 fill-current" />
             </a>
             <button id="theme-toggle" type="button"
-                class="absolute left-56 top-16 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg text-sm p-2.5">
+                class="absolute left-[350px] top-[105px] text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg text-sm p-2.5">
                 <i id="theme-toggle-dark-icon" class="hidden w-5 h-5 ri-moon-fill ri-xl"></i>
                 <i id="theme-toggle-light-icon" class="hidden w-5 h-5 ri-sun-fill ri-xl"></i>
             </button>

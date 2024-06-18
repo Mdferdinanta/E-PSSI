@@ -2,13 +2,16 @@
 
     <div class="container flex gap-4 py-4 mx-auto sm:max-w-full sm:px-4">
 
-        <div class="w-full px-8 py-4 mx-auto overflow-hidden bg-white shadow-md md:px-8 sm:max-w-full dark:bg-gray-800 sm:rounded-lg">
+        <div
+            class="w-full px-8 py-4 mx-auto overflow-hidden bg-white shadow-md md:px-8 sm:max-w-full dark:bg-gray-800 sm:rounded-lg">
             <livewire:layout.talent-details />
         </div>
 
         <div class="w-1/3 bg-gray-800 rounded-lg">
             <div class="relative m-4 bg-gray-700 rounded-md">
-                <livewire:onwatcher :talent="$talent" />
+                <div class="absolute top-3 left-2">
+                    <livewire:onwatcher :talent="$talent" />
+                </div>
                 <div class="flex justify-center">
                     <img class="h-56" src="{{ Storage::url($talent->photo) }}" alt="{{ $talent->talent_name }}">
                 </div>

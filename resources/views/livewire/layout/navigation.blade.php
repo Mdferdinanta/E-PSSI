@@ -23,7 +23,7 @@ new class extends Component {
                 <!-- Logo -->
                 <div class="flex items-center shrink-0">
                     <a href="{{ route('dashboard') }}" wire:navigate>
-                        <x-application-logo class="block w-auto h-6 text-gray-800 fill-current dark:text-gray-200" />
+                        <x-application-logo class="block w-auto h-6 text-gray-800 fill-current dark:text-white" />
                     </a>
                 </div>
 
@@ -47,7 +47,7 @@ new class extends Component {
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <div>
                     <button id="theme-toggle" type="button"
-                        class="p-2 text-sm text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-900">
+                        class="p-2 text-sm text-gray-500 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-900">
                         <i id="theme-toggle-dark-icon" class="hidden w-5 h-5 ri-moon-fill ri-xl"></i>
                         <i id="theme-toggle-light-icon" class="hidden w-5 h-5 ri-sun-fill ri-xl"></i>
                     </button>
@@ -55,7 +55,7 @@ new class extends Component {
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md dark:text-gray-400 dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none">
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md dark:text-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none">
                             <div x-data="{{ json_encode(['name' => auth()->user()->name]) }}" x-text="name"
                                 x-on:profile-updated.window="name = $event.detail.name"></div>
 
@@ -119,7 +119,7 @@ new class extends Component {
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
             <div class="px-4">
-                <div class="text-base font-medium text-gray-800 dark:text-gray-200" x-data="{{ json_encode(['name' => auth()->user()->name]) }}"
+                <div class="text-base font-medium text-gray-800 dark:text-white" x-data="{{ json_encode(['name' => auth()->user()->name]) }}"
                     x-text="name" x-on:profile-updated.window="name = $event.detail.name"></div>
                 <div class="text-sm font-medium text-gray-500">{{ auth()->user()->email }}</div>
             </div>
@@ -137,7 +137,7 @@ new class extends Component {
                 </button>
 
                 <button id="theme-toggle-res" type="button"
-                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg text-sm p-2.5">
+                    class="text-gray-500 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg text-sm p-2.5">
                     <i id="theme-toggle-res-dark-icon" class="hidden w-5 h-5 ri-moon-fill ri-xl"></i>
                     <i id="theme-toggle-res-light-icon" class="hidden w-5 h-5 ri-sun-fill ri-xl"></i>
                 </button>
