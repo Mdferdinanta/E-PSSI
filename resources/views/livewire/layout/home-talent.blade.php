@@ -1,10 +1,10 @@
-<div class="h-full bg-gray-200 border rounded-lg dark:border-gray-700 dark:bg-gray-900">
+<div class="h-full bg-gray-200 border rounded-xl dark:border-gray-700 dark:bg-gray-900">
     <div class="p-2 text-2xl font-semibold text-center">
-        <h3>Talents</h3>
+        <a href="/talents"><h3>Talents</h3></a>
     </div>
     @foreach ($talents as $talent)
         <div class="flex justify-between shadow-xl dark:even:bg-gray-700 dark:bg-gray-800">
-            <div class="flex justify-center w-1/3 shrink-0">
+            <div onclick="location.href='/talents'" class="flex cursor-pointer justify-center w-1/3 shrink-0">
                 <img class="h-32" src="{{ Storage::url($talent->photo) }}" alt="talents">
             </div>
             <div class="w-full p-4 m-auto text-lg">
